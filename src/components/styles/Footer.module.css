@@ -1,0 +1,19 @@
+.Footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  }
+
+.Footer p{
+  font-size: 0.8rem;
+}
+
+.Footer ul{
+  display: flex;
+  gap: 1rem
+}
+
+.Footer img{
+  width: 25px;
+}

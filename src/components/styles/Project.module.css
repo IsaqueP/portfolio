@@ -1,0 +1,62 @@
+.Project{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.Project img{
+  transition: all 0.5s;
+  transform: scale(1);
+  border-radius: 3px;
+}
+
+.Project:hover img{
+  border-radius: 20px;
+  transform: scale(1.2);
+  opacity: 0.2;
+}
+
+
+.Project p{
+  position: absolute;
+  width: 100%;
+  align-self: end;
+  justify-self: start;
+  visibility: hidden;
+}
+
+.Project:hover p{
+  visibility: inherit;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .Project{
+    flex-wrap: wrap;
+  }
+
+  .Project p{
+    position: relative;
+    visibility: visible;
+    align-self: self-start;
+    font-size: 1rem;
+  }
+
+  .Project:hover img{
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 3px;
+  }
+
+  .Project:hover p{
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

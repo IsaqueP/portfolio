@@ -1,0 +1,74 @@
+.Projects{
+  padding: 5rem 7rem 3rem 7rem;
+  border-top: 1px solid #1b1817;
+  border-bottom: 1px solid #1b1817;
+  
+}
+
+.Projects h2{
+  font-size: 3rem;
+  color: #5c58b6;
+  margin-bottom: 3rem;
+}
+
+.Projects .ContainerProjects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Projects .ContainerProjects a{
+  text-decoration: none;
+  color: white;
+}
+
+.Projects .ContainerProjects ul{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 5px;
+}
+
+.Projects .ContainerProjects ul li{
+  padding: 0.3rem;
+  background-color: rgba(82, 88, 92, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.Projects .ContainerProjects ul li img{
+  width: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .Projects{
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .Projects h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .Projects .ContainerProjects{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .Projects{
+    padding: 5rem 1rem;
+  }
+
+  .Projects .ContainerProjects{
+    grid-template-columns: 1fr;
+  }
+}

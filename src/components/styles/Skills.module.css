@@ -1,0 +1,109 @@
+.Skills{
+  padding: 5rem 7rem 3rem 7rem;
+  border-top: 1px solid #1b1817;
+  border-bottom: 1px solid #1b1817;
+}
+
+.Skills h2{
+  font-size: 3rem;
+  color: #5c58b6;
+  margin-bottom: 3rem;
+}
+
+.Skills > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.Skills .ListSkills{
+  max-width: 40rem;
+}
+
+
+.Skills .ListSkills ul li{
+  list-style: circle;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.Skills .ListSkills ul li b{
+  color: rgb(136, 171, 204);
+}
+
+.Skills .ListSkills p{
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: start;
+  font-size: 1.1rem;
+  width: 50%;
+}
+
+.Skills .imgSkills{
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: repeat(2, 7rem);
+  gap: 1rem;
+}
+
+.Skills .imgSkills div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(82, 88, 92, 0.2);
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.Skills .imgSkills div img{
+  height: 2rem;
+}
+
+.Skills .imgSkills div:nth-child(1){
+  color: tomato;
+}
+
+.Skills .imgSkills div:nth-child(2){
+  color: rgb(39, 127, 241);
+}
+
+.Skills .imgSkills div:nth-child(3){
+  color: rgb(236, 236, 30);
+}
+
+.Skills .imgSkills div:nth-child(4){
+  color: rgb(94, 210, 245);
+}
+
+.Skills .imgSkills div:nth-child(5){
+  color: tomato;
+}
+
+.Skills .imgSkills div:nth-child(6){
+  color: rgb(104, 157, 238);
+}
+
+
+@media (max-width: 1000px) {
+  .Skills{
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .Skills h2{
+    text-align: center;
+  }
+
+  .Skills > div{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .Skills{
+    padding: 5rem 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+.About{
+  padding: 5rem 7rem 3rem 7rem;
+  border-top: 1px solid #1b1817;
+  border-bottom: 1px solid #1b1817;
+}
+
+.About h2{
+  font-size: 3rem;
+  color: #5c58b6;
+  margin-bottom: 3rem;
+}
+
+.About > div{
+  display: flex;
+  width: 100%;
+}
+
+.About > div .textAbout{
+  width: 50%;
+}
+
+.About > div .textAbout p{
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: start;
+  font-size: 1.1rem;
+}
+
+.About > div .textAbout a{
+  color: #455D73;
+  text-decoration: none;
+}
+
+.About > div .decorationNotebook{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .About{
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .About h2{
+    text-align: center;
+  }
+
+  .About > div{
+    flex-wrap: wrap;
+  }
+
+  .About > div .textAbout{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .About > div .decorationNotebook{
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .About{
+    padding: 5rem 1rem;
+  }
+}

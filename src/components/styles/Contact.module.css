@@ -1,0 +1,157 @@
+.Contact{
+  display: grid;
+  grid-template-areas: 
+    'h2'
+    'info'
+    'form'
+  ;
+  padding: 5rem 7rem 3rem 7rem;
+  border-top: 1px solid #1b1817;
+  border-bottom: 1px solid #1b1817;
+  justify-items: center;
+}
+
+.Contact h2{
+  font-size: 3rem;
+  color: #5c58b6;
+  margin-bottom: 3rem;
+  grid-area: h2;
+  text-align: center;
+}
+
+.Contact .info{
+  grid-area: info;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.Contact .info div{
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.Contact .info div p{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.Contact .info div a{
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #455D73;
+  width: fit-content;
+}
+
+.Contact .info div img{
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.Contact .form{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  grid-area: form;
+}
+
+.Contact .form .input{
+  height: 3rem;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.Contact .form .textarea:focus,
+.Contact .form .input:focus{
+  border: 2px solid #5c58b6;
+}
+
+.Contact .form .textarea{
+  height: 15rem;
+  outline: none;
+  border-radius: 3px;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Contact .form .input,
+.Contact .form .textarea{
+  background-color: #141414;
+  color: #ffff;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.Contact .form .button{
+  height: 3rem;
+  width: 7rem;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  background-color: #455D73;
+  color: white;
+}
+
+.Contact .form .button:hover{
+  background-color: #384958;
+}
+
+@media (max-width: 1000px) {
+  .Contact{
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .Contact h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .Contact{
+    padding: 5rem 1rem;
+  }
+
+  .Contact .info{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'linkedin git'
+    'whats whats'
+    'email email';
+  }
+
+  .Contact .info .cardInfoWhatsapp{
+    grid-area: whats;
+  }
+
+  .Contact .info .cardInfoGithub{
+    grid-area: git;
+  }
+
+  .Contact .info .cardInfoEmail{
+    grid-area: email;
+  }
+
+  .Contact .info .cardInfoLinkedin{
+    grid-area: linkedin ;
+  }
+}

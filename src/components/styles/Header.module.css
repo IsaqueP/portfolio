@@ -1,0 +1,126 @@
+header{
+  height: 3.5rem;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.5s;
+}
+
+header.black{
+  background-color: #141414;
+}
+
+header .btn_mobile{
+  display: none;
+}
+
+header .menu{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header .menu li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+header .menu li a{
+  text-decoration: none;
+  color: white;
+
+}
+
+header .menu li::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+header .menu li:last-child::after{
+  display: none;
+}
+
+@media (max-width: 650px){
+  header{
+    justify-content: end;
+    padding: 2rem;
+  }
+
+  header .menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background-color: #141414;
+    z-index: 1000;
+  }
+
+  header .menu li{
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    font-size: 1.1rem;
+  }
+
+  header .menu li::after{
+    content: none;
+  }
+
+  nav.active .menu{
+    display: flex;
+  }
+
+  header .btn_mobile{
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+  } 
+
+  header .btn_mobile .hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  header .btn_mobile .hamburger::before,
+  header .btn_mobile .hamburger::after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: 0.5s;
+  }
+
+  nav.active .hamburger{
+    border-top-color: transparent;
+  }
+
+  nav.active .hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  nav.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  
+}
