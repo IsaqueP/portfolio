@@ -48,7 +48,7 @@ export function Contact(){
             <img src={whatsapp_icon} alt="ícone do whatsapp" />
             WhatsApp  
           </p>
-          <a href="https://api.whatsapp.com/send?phone=5511980354098&text=gostaria%20de%20participar%20de%20um%20projeto?" target="_blank">+55 11   98035-4098</a>
+          <a href="https://api.whatsapp.com/send?phone=5511930196805&text=gostaria%20de%20participar%20de%20um%20projeto?" target="_blank">+55 11   93019-6805</a>
         </div>
         <div className={styles.cardInfoGithub}>
           <p>
