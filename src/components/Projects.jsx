@@ -7,10 +7,12 @@ import css from '../assets/css.png'
 import js from '../assets/js.png'
 import react from '../assets/react.png'
 import sass from '../assets/sass.png'
+import tailwind from '../assets/tailwindcss.png'
+import typescript from '../assets/typescript.png'
 import node from '../assets/node.png'
 import Vtex from '../assets/Vtex.png'
 import Costs from '../assets/Costs.png'
-import NetflixClone from '../assets/NetflixClone.png'
+import InOrbit from '../assets/InOrbit.jpeg'
 import DevFinance from '../assets/DevFinance.png'
 import Todolist from '../assets/Todolist.png'
 import Beautysalon from '../assets/Beautysalon.png'
@@ -27,10 +29,10 @@ let projects = [
     stack: ['html', 'css', 'react', 'node.js'],
     repositorio: 'https://github.com/IsaqueP/Costs'
   }, {
-    name: 'NetflixClone',
-    background: NetflixClone,
-    stack: ['html', 'css', 'react'],
-    repositorio: 'https://github.com/IsaqueP/Netflix-Clone'
+    name: 'In.Orbit',
+    background: InOrbit,
+    stack: ['html', 'tailwind', 'typescript', 'react'],
+    repositorio: 'https://github.com/IsaqueP/nlwPocket'
   }, {
     name: 'DevFinance',
     background: DevFinance,
@@ -59,7 +61,7 @@ export function Projects(){
        {projects.map((project, index) => {
           return(
             <div key={index}>
-              <a href={project.repositorio} target="_blank">
+              <a href={project.repositorio} target="_blank" rel="noreferrer">
                 <Project name={project.name} background={project.background} stack={project.stack} />
               </a>
               <ul>
@@ -83,6 +85,12 @@ export function Projects(){
                         break;
                       case 'node.js':
                         icon = node
+                        break;
+                      case 'typescript':
+                        icon = typescript
+                        break;
+                      case 'tailwind':
+                        icon = tailwind
                         break;
                     }
 

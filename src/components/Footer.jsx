@@ -7,7 +7,7 @@ export function Footer(){
 
   return(
     <footer className={styles.Footer}>
-     <p>© 2023 Isaque Pinheiro dos Santos</p>
+     <p>© 2025 Isaque Pinheiro dos Santos</p>
      <ul>
       <li>
         <a href="https://github.com/IsaqueP" target='_blank'>

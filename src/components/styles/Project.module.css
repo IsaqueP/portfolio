@@ -1,6 +1,6 @@
 .Project{
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
@@ -11,6 +11,7 @@
 
 .Project img{
   transition: all 0.5s;
+  height: 100%;
   transform: scale(1);
   border-radius: 3px;
 }
